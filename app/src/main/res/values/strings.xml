@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">ChatMultiStream</string>
+
+    <!-- Main screen -->
+    <string name="app_title">MultiStream Chat</string>
+    <string name="status_messages">%1$d msgs</string>
+    <plurals name="status_active">
+        <item quantity="one">%1$d active</item>
+        <item quantity="other">%1$d active</item>
+    </plurals>
+    <string name="status_screen_on">Screen on ☀️</string>
+    <string name="screen_always_on">Always keep screen on</string>
+    <string name="clear_chat">Clear chat</string>
+    <string name="configure_connections">Configure connections</string>
+    <string name="jump_to_latest">Jump to latest</string>
+    <plurals name="new_messages">
+        <item quantity="one">%1$d new</item>
+        <item quantity="other">%1$d new</item>
+    </plurals>
+    <string name="filter_all">All</string>
+
+    <!-- Empty state -->
+    <string name="empty_title">No messages yet</string>
+    <string name="empty_description">Connect your live channels to start receiving unified Twitch, YouTube, Kick and TikTok chats.</string>
+    <string name="empty_action">Set up streaming channels</string>
+
+    <!-- Simulation bar -->
+    <string name="simulate_label">Simulate:</string>
+    <string name="simulate_button">+%1$s</string>
+
+    <!-- Settings dialog -->
+    <string name="settings_title">Settings</string>
+    <string name="tab_appearance">Appearance</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_platforms">Platforms</string>
+    <string name="done">Done</string>
+
+    <!-- Appearance -->
+    <string name="theme_title">Theme</string>
+    <string name="theme_description">\"System\" follows the device light or dark mode. You can also force one of the two.</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <string name="language_title">Language</string>
+    <string name="language_description">Follow the device language or choose one manually. The change applies immediately.</string>
+    <string name="language_system">System</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_english">English</string>
+
+    <string name="high_contrast_title">High contrast</string>
+    <string name="high_contrast_description">Strengthens the contrast of text, backgrounds and borders, in both light and dark themes.</string>
+
+    <string name="font_scale_title">Text size</string>
+    <string name="font_scale_description">Scales the text of the whole app relative to the system font size.</string>
+    <string name="font_scale_value">%1$d %%</string>
+    <string name="decrease_text_size">Decrease text size</string>
+    <string name="increase_text_size">Increase text size</string>
+    <string name="font_scale_preview">Preview: GG in that match!</string>
+
+    <!-- Chat tab -->
+    <string name="keep_screen_on_title">Keep screen on</string>
+    <string name="keep_screen_on_description">Prevents the phone from sleeping while chats are connected.</string>
+
+    <string name="emotes_title">Show emotes</string>
+    <string name="emotes_description">Loads Twitch and Kick emote images. Turn it off to save data, memory and battery.</string>
+
+    <string name="quick_bar_title">Show simulation bar</string>
+    <string name="quick_bar_description">Shows the \"+Twitch\", \"+YouTube\"... buttons to test fake messages. Turn it off to leave more room for the chat.</string>
+
+    <string name="rate_title">Reduce message updates</string>
+    <string name="rate_description">Slow mode: shows at most a set number of messages per second. In very fast chats the extra messages are dropped, so the list does not get saturated and cards do not overlap.</string>
+    <string name="rate_option_unlimited">Unlimited</string>
+    <string name="rate_option_value">%1$d/s</string>
+    <string name="rate_status_limited">Showing up to %1$d messages per second.</string>
+    <string name="rate_status_unlimited">Showing every incoming message.</string>
+
+    <string name="history_title">Message history</string>
+    <string name="history_description">Number of messages kept loaded. When the limit is exceeded, the oldest ones are removed to free memory. In very fast chats, a lower limit keeps the app lighter.</string>
+    <string name="history_option_value">%,d</string>
+    <string name="history_option_unlimited">Unlimited</string>
+    <string name="history_status_limited">Keeping the last %,d messages.</string>
+    <string name="history_status_unlimited">Keeping every message of the session. It can use a lot of memory in long streams.</string>
+
+    <!-- Highlighted events -->
+    <string name="event_subscription">Subscription</string>
+    <plurals name="event_subscription_months">
+        <item quantity="one">Subscription · %1$d month</item>
+        <item quantity="other">Subscription · %1$d months</item>
+    </plurals>
+    <string name="event_gift_sub">Gift subscription</string>
+    <string name="event_gift_sub_recipient">Gift subscription to %1$s</string>
+    <plurals name="event_gift_subs">
+        <item quantity="one">Gifted %1$d subscription</item>
+        <item quantity="other">Gifted %1$d subscriptions</item>
+    </plurals>
+    <string name="event_cheer">%1$d bits</string>
+    <string name="event_donation">Super Chat</string>
+    <string name="event_donation_amount">Super Chat · %1$s</string>
+    <string name="event_super_sticker">Super Sticker</string>
+    <string name="event_super_sticker_amount">Super Sticker · %1$s</string>
+    <string name="event_membership">Membership</string>
+    <string name="event_gift_membership">Gifted membership</string>
+    <plurals name="event_gift_memberships">
+        <item quantity="one">Gifted %1$d membership</item>
+        <item quantity="other">Gifted %1$d memberships</item>
+    </plurals>
+    <string name="event_raid">Raid</string>
+    <plurals name="event_raid_viewers">
+        <item quantity="one">Raid · %1$d viewer</item>
+        <item quantity="other">Raid · %1$d viewers</item>
+    </plurals>
+    <string name="event_redemption">Channel reward redeemed</string>
+    <string name="event_highlight">Highlighted message</string>
+    <string name="event_announcement">Announcement</string>
+    <!-- Stream gifts (TikTok): the gift name comes from the platform and is not translated. -->
+    <string name="event_gift">Gift</string>
+    <string name="event_gift_named">Gift · %1$s</string>
+    <string name="event_gift_named_count">Gift · %1$s ×%2$d</string>
+    <plurals name="event_gifts">
+        <item quantity="one">%1$d gift</item>
+        <item quantity="other">%1$d gifts</item>
+    </plurals>
+
+    <!-- Simulation bar -->
+    <string name="simulate_events_label">Events:</string>
+    <string name="simulate_event_sub">Sub</string>
+    <string name="simulate_event_gift_sub">Gift sub</string>
+    <string name="simulate_event_cheer">Bits</string>
+    <string name="simulate_event_donation">Super Chat</string>
+    <string name="simulate_event_super_sticker">Sticker</string>
+    <string name="simulate_event_membership">Membership</string>
+    <string name="simulate_event_gift_membership">Gift ×10</string>
+    <string name="simulate_event_raid">Raid</string>
+    <string name="simulate_event_redemption">Reward</string>
+    <string name="simulate_event_gift">TikTok gift</string>
+    <string name="simulate_event_highlight">Highlight</string>
+    <string name="simulate_event_announcement">Announce</string>
+
+    <!-- Platforms -->
+    <string name="connected_format">Connected (#%1$s)</string>
+    <string name="connecting">Connecting...</string>
+    <string name="error">Error</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="save_and_connect">Save and Connect</string>
+    <string name="channel_label_twitch">Twitch channel</string>
+    <string name="channel_hint_twitch">e.g. ibai or auronplay</string>
+    <string name="channel_label_youtube">Video ID or Channel</string>
+    <string name="channel_hint_youtube">e.g. @midudev or ID (11 characters)</string>
+    <string name="channel_label_kick">Channel or Channel ID</string>
+    <string name="channel_hint_kick">e.g. westcol or 875396</string>
+    <string name="channel_label_tiktok">TikTok user (no login) or Relay</string>
+    <string name="channel_hint_tiktok">e.g. @streamer or ws://localhost:21213</string>
+</resources>

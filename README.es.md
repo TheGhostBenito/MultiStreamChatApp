@@ -53,4 +53,6 @@ Tests unitarios de parsers y lógica de clientes:
 
 ## Licencia
 
-Este proyecto se distribuye bajo la licencia MIT.
+Este proyecto está licenciado bajo la **GNU General Public License v3.0 (GPL-3.0)**.
+
+Como autor, permito la modificación de las funciones de la app y la creación de subversiones/derivados, siempre y cuando el resultado **se mantenga libre de anuncios** y se distribuya bajo la misma licencia GPL-3.0. Consulta el archivo [LICENSE](LICENSE) para el texto completo.

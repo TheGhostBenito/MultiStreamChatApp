@@ -53,4 +53,6 @@ Unit tests for parsers and client logic:
 
 ## License
 
-This project is distributed under the MIT license.
+This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+As the author, I allow modification of the app's features and the creation of sub-versions/derivatives, as long as the result **remains free of advertisements** and is distributed under the same GPL-3.0 license. See the [LICENSE](LICENSE) file for the full text.

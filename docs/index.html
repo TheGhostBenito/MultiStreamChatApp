@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiStream Chat — Unified live chat for Twitch, YouTube, Kick &amp; TikTok</title>
+  <meta name="description" content="MultiStream Chat unifies Twitch, YouTube, Kick and TikTok live chats into one Android app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="brand-dot"></span> MultiStream Chat</div>
+      <div class="nav-links">
+        <a href="#features"><span class="lang-en">Features</span><span class="lang-es">Funciones</span></a>
+        <a href="#guide"><span class="lang-en">User Guide</span><span class="lang-es">Guía de uso</span></a>
+        <a href="#settings"><span class="lang-en">Settings</span><span class="lang-es">Ajustes</span></a>
+        <a href="#architecture"><span class="lang-en">Architecture</span><span class="lang-es">Arquitectura</span></a>
+        <a href="#dev"><span class="lang-en">Develop</span><span class="lang-es">Desarrollo</span></a>
+        <div class="lang-switch">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <h1>
+          <span class="lang-en">One chat. Four platforms.</span>
+          <span class="lang-es">Un chat. Cuatro plataformas.</span>
+        </h1>
+        <p>
+          <span class="lang-en">MultiStream Chat merges the live chats of Twitch, YouTube, Kick and TikTok into a single, smooth Android view — with emotes, filters and auto-reconnect.</span>
+          <span class="lang-es">MultiStream Chat fusiona los chats en vivo de Twitch, YouTube, Kick y TikTok en una sola vista Android fluida, con emotes, filtros y reconexión automática.</span>
+        </p>
+        <div class="badges">
+          <span class="badge">Kotlin</span>
+          <span class="badge">Jetpack Compose</span>
+          <span class="badge">Material 3</span>
+          <span class="badge">minSdk 24</span>
+          <span class="badge">targetSdk 37</span>
+          <span class="badge">GPL-3.0</span>
+          <span class="badge"><span class="lang-en">Ad-free</span><span class="lang-es">Sin anuncios</span></span>
+        </div>
+        <div class="cta">
+          <a class="btn btn-primary" href="#guide">
+            <span class="lang-en">Get started</span><span class="lang-es">Empezar</span>
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/TheGhostBenito/MultiStreamChatApp" target="_blank" rel="noopener">
+            <span class="lang-en">View on GitHub</span><span class="lang-es">Ver en GitHub</span>
+          </a>
+        </div>
+      </div>
+      <div class="phone" aria-hidden="true">
+        <div class="phone-bar"><span>9:41</span><span>●●●</span></div>
+        <div class="phone-screen">
+          <div class="msg" style="animation-delay:.05s">
+            <div class="row"><span class="user"><span class="platform-tag tag-twitch">TWITCH</span>ibai</span><span class="time">21:04</span></div>
+            <div class="body">¡GG en esa partida! PogChamp</div>
+          </div>
+          <div class="msg" style="animation-delay:.15s">
+            <div class="row"><span class="user"><span class="platform-tag tag-youtube">YOUTUBE</span>YTFan</span><span class="time">21:04</span></div>
+            <div class="body">Gran directo, suscrito y con campana activada</div>
+          </div>
+          <div class="msg" style="animation-delay:.25s">
+            <div class="row"><span class="user"><span class="platform-tag tag-kick">KICK</span>KickChad</span><span class="time">21:05</span></div>
+            <div class="body">W stream bro, 100% hype</div>
+          </div>
+          <div class="msg" style="animation-delay:.35s">
+            <div class="row"><span class="user"><span class="platform-tag tag-tiktok">TIKTOK</span>TokLover</span><span class="time">21:05</span></div>
+            <div class="body">Envié 5 regalitos rosas 🌹✨</div>
+          </div>
+          <div class="msg" style="animation-delay:.45s">
+            <div class="row"><span class="user"><span class="platform-tag tag-twitch">TWITCH</span>auronplay</span><span class="time">21:06</span></div>
+            <div class="body">Vamos con todo hoy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <h2 class="section-title"><span class="lang-en">Features</span><span class="lang-es">Funciones</span></h2>
+      <p class="section-sub">
+        <span class="lang-en">Everything you need to follow several live chats without switching apps.</span>
+        <span class="lang-es">Todo lo que necesitas para seguir varios chats en vivo sin cambiar de app.</span>
+      </p>
+      <div class="grid">
+        <div class="card"><div class="icon">🔗</div><h3><span class="lang-en">Multi-platform</span><span class="lang-es">Multi-plataforma</span></h3><p><span class="lang-en">Twitch, YouTube, Kick and TikTok connected at the same time.</span><span class="lang-es">Twitch, YouTube, Kick y TikTok conectados a la vez.</span></p></div>
+        <div class="card"><div class="icon">🎨</div><h3><span class="lang-en">Emotes inline</span><span class="lang-es">Emotes inline</span></h3><p><span class="lang-en">Twitch &amp; Kick emotes rendered as images inside the message.</span><span class="lang-es">Emotes de Twitch y Kick renderizados como imágenes dentro del mensaje.</span></p></div>
+        <div class="card"><div class="icon">🔍</div><h3><span class="lang-en">Platform filter</span><span class="lang-es">Filtro por plataforma</span></h3><p><span class="lang-en">Show all messages or only one platform.</span><span class="lang-es">Muestra todos los mensajes o solo una plataforma.</span></p></div>
+        <div class="card"><div class="icon">♻️</div><h3><span class="lang-en">Auto-reconnect</span><span class="lang-es">Reconexión automática</span></h3><p><span class="lang-en">Exponential backoff keeps you connected on drops.</span><span class="lang-es">Backoff exponencial mantiene la conexión ante caídas.</span></p></div>
+        <div class="card"><div class="icon">⚡</div><h3><span class="lang-en">Smooth scrolling</span><span class="lang-es">Scroll fluido</span></h3><p><span class="lang-en">Batched updates prevent jank on fast chats.</span><span class="lang-es">Actualizaciones por batches evitan tirones en chats rápidos.</span></p></div>
+        <div class="card"><div class="icon">🎯</div><h3><span class="lang-en">Keep screen on</span><span class="lang-es">Pantalla despierta</span></h3><p><span class="lang-en">Prevents the device from sleeping while connected.</span><span class="lang-es">Evita que el móvil se suspenda mientras haya chats conectados.</span></p></div>
+        <div class="card"><div class="icon">💾</div><h3><span class="lang-en">Low memory</span><span class="lang-es">Bajo consumo</span></h3><p><span class="lang-en">Coil cache tuned to 10% memory, no crossfade.</span><span class="lang-es">Caché de Coil al 10%, sin crossfade.</span></p></div>
+        <div class="card"><div class="icon">🧪</div><h3><span class="lang-en">Test bar</span><span class="lang-es">Barra de simulación</span></h3><p><span class="lang-en">Inject sample messages per platform.</span><span class="lang-es">Inyecta mensajes de prueba por plataforma.</span></p></div>
+      </div>
+    </section>
+
+    <!-- USER GUIDE -->
+    <section id="guide">
+      <h2 class="section-title"><span class="lang-en">User Guide</span><span class="lang-es">Guía de uso</span></h2>
+      <p class="section-sub">
+        <span class="lang-en">Step-by-step instructions to connect each platform.</span>
+        <span class="lang-es">Instrucciones paso a paso para conectar cada plataforma.</span>
+      </p>
+      <div class="guide">
+        <div class="guide-nav">
+          <button data-target="g-twitch">Twitch</button>
+          <button data-target="g-youtube">YouTube</button>
+          <button data-target="g-kick">Kick</button>
+          <button data-target="g-tiktok">TikTok</button>
+          <button data-target="g-settings">⚙ <span class="lang-en">Settings</span><span class="lang-es">Ajustes</span></button>
+        </div>
+        <div>
+          <div class="guide-panel" id="g-twitch">
+            <h3>Twitch</h3>
+            <ol>
+              <li><span class="lang-en">Open Settings (gear icon) → Platforms → Twitch.</span><span class="lang-es">Abre Ajustes (icono engranaje) → Plataformas → Twitch.</span></li>
+              <li><span class="lang-en">Enter the channel name (e.g. <code>ibai</code>), without <code>#</code>.</span><span class="lang-es">Introduce el nombre del canal (ej. <code>ibai</code>), sin <code>#</code>.</span></li>
+              <li><span class="lang-en">Optionally paste an OAuth token for authenticated chat.</span><span class="lang-es">Opcionalmente pega un token OAuth para chat autenticado.</span></li>
+              <li><span class="lang-en">Tap "Save &amp; Connect".</span><span class="lang-es">Pulsa "Guardar y Conectar".</span></li>
+            </ol>
+            <div class="note"><span class="lang-en">Anonymous connections use <code>justinfan</code> accounts automatically.</span><span class="lang-es">Las conexiones anónimas usan cuentas <code>justinfan</code> automáticamente.</span></div>
+          </div>
+          <div class="guide-panel" id="g-youtube">
+            <h3>YouTube</h3>
+            <ol>
+              <li><span class="lang-en">Paste a Video ID (11 chars), a watch URL, or a channel handle (e.g. <code>@midudev</code>).</span><span class="lang-es">Pega un Video ID (11 caracteres), una URL de watch o un handle de canal (ej. <code>@midudev</code>).</span></li>
+              <li><span class="lang-en">The app resolves the active live stream and its chat.</span><span class="lang-es">La app resuelve el directo activo y su chat.</span></li>
+              <li><span class="lang-en">Tap "Save &amp; Connect".</span><span class="lang-es">Pulsa "Guardar y Conectar".</span></li>
+            </ol>
+            <div class="note"><span class="lang-en">Super Chats are shown with a gold highlight.</span><span class="lang-es">Los Super Chats se muestran con resaltado dorado.</span></div>
+          </div>
+          <div class="guide-panel" id="g-kick">
+            <h3>Kick</h3>
+            <ol>
+              <li><span class="lang-en">Enter a slug (e.g. <code>westcol</code>) or a numeric channel id.</span><span class="lang-es">Introduce un slug (ej. <code>westcol</code>) o un id de canal numérico.</span></li>
+              <li><span class="lang-en">The app resolves the channel and starts polling messages.</span><span class="lang-es">La app resuelve el canal e inicia el polling de mensajes.</span></li>
+              <li><span class="lang-en">Tap "Save &amp; Connect".</span><span class="lang-es">Pulsa "Guardar y Conectar".</span></li>
+            </ol>
+            <div class="note"><span class="lang-en">Kick emotes are parsed from <code>[emote:id:name]</code> tokens.</span><span class="lang-es">Los emotes de Kick se parsean desde tokens <code>[emote:id:name]</code>.</span></div>
+          </div>
+          <div class="guide-panel" id="g-tiktok">
+            <h3>TikTok</h3>
+            <ol>
+              <li><span class="lang-en">Enter the username without <code>@</code> (e.g. <code>streamer</code>).</span><span class="lang-es">Introduce el usuario sin <code>@</code> (ej. <code>streamer</code>).</span></li>
+              <li><span class="lang-en">The app checks the live room and opens a WebSocket.</span><span class="lang-es">La app verifica la sala en vivo y abre un WebSocket.</span></li>
+              <li><span class="lang-en">Alternatively paste a relay WebSocket URL (TikTok-Live-Connector / EulerStream) in the token field.</span><span class="lang-es">Alternativamente pega una URL de relay WebSocket (TikTok-Live-Connector / EulerStream) en el campo token.</span></li>
+            </ol>
+            <div class="note"><span class="lang-en">Only live rooms can connect; offline accounts show an error.</span><span class="lang-es">Solo las salas en vivo pueden conectar; las cuentas offline muestran error.</span></div>
+          </div>
+          <div class="guide-panel" id="g-settings">
+            <h3><span class="lang-en">Settings</span><span class="lang-es">Ajustes</span></h3>
+            <ul>
+              <li><strong><span class="lang-en">Appearance</span><span class="lang-es">Apariencia</span>:</strong> <span class="lang-en">Theme (System/Light/Dark), high contrast, text scale 80–150%.</span><span class="lang-es">Tema (Sistema/Claro/Oscuro), alto contraste, escala de texto 80–150%.</span></li>
+              <li><strong><span class="lang-en">Chat</span><span class="lang-es">Chat</span>:</strong> <span class="lang-en">Keep screen on, show emotes, show test bar.</span><span class="lang-es">Pantalla despierta, mostrar emotes, barra de simulación.</span></li>
+              <li><strong><span class="lang-en">Platforms</span><span class="lang-es">Plataformas</span>:</strong> <span class="lang-en">Channel + token per service, connect/disconnect.</span><span class="lang-es">Canal + token por servicio, conectar/desconectar.</span></li>
+            </ul>
+            <div class="note"><span class="lang-en">Auto-connect restores previously configured channels on launch.</span><span class="lang-es">La auto-conexión restaura los canales configurados al iniciar.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SETTINGS DEMO -->
+    <section id="settings">
+      <h2 class="section-title"><span class="lang-en">Settings</span><span class="lang-es">Ajustes</span></h2>
+      <p class="section-sub">
+        <span class="lang-en">Settings are split into three tabs to avoid overwhelming the user.</span>
+        <span class="lang-es">Los ajustes se dividen en tres pestañas para no abrumar al usuario.</span>
+      </p>
+      <div class="settings-demo">
+        <div class="tab">🎨 <span class="lang-en">Appearance</span><span class="lang-es">Apariencia</span></div>
+        <div class="tab">💬 <span class="lang-en">Chat</span><span class="lang-es">Chat</span></div>
+        <div class="tab">🌐 <span class="lang-en">Platforms</span><span class="lang-es">Plataformas</span></div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section id="architecture">
+      <h2 class="section-title"><span class="lang-en">Architecture</span><span class="lang-es">Arquitectura</span></h2>
+      <p class="section-sub">
+        <span class="lang-en">MVVM with a unified repository aggregating all platform clients.</span>
+        <span class="lang-es">MVVM con un repositorio unificado que agrega todos los clientes por plataforma.</span>
+      </p>
+      <div class="arch">
+        <div class="node">MainActivity</div>
+        <div class="arrow">↓</div>
+        <div class="node">ChatViewModel</div>
+        <div class="arrow">↓</div>
+        <div class="node">UnifiedChatRepository</div>
+        <div class="arrow">↓</div>
+        <div class="node">Twitch / YouTube / Kick / TikTok clients</div>
+      </div>
+      <p style="margin-top:24px;color:var(--muted);font-size:14px;">
+        <span class="lang-en">Messages are merged into a Channel, batched (90 ms / 200 msgs) and exposed as a StateFlow. Connection states are combined from all four clients.</span>
+        <span class="lang-es">Los mensajes se fusionan en un Channel, se agrupan (90 ms / 200 msgs) y se exponen como StateFlow. Los estados de conexión se combinan de los cuatro clientes.</span>
+      </p>
+    </section>
+
+    <!-- DEVELOP -->
+    <section id="dev">
+      <h2 class="section-title"><span class="lang-en">Develop</span><span class="lang-es">Desarrollo</span></h2>
+      <p class="section-sub">
+        <span class="lang-en">Build and test commands.</span>
+        <span class="lang-es">Comandos de build y tests.</span>
+      </p>
+      <div class="grid">
+        <div class="card"><h3>Build</h3><p><code>./gradlew :app:assembleDebug</code></p></div>
+        <div class="card"><h3>Tests</h3><p><code>./gradlew test</code></p></div>
+        <div class="card"><h3>Lint</h3><p><code>./gradlew lint</code></p></div>
+      </div>
+      <p style="margin-top:20px;color:var(--muted);font-size:14px;">
+        <span class="lang-en">Requires Android Studio, JDK 11+ and Android SDK (API 37).</span>
+        <span class="lang-es">Requiere Android Studio, JDK 11+ y Android SDK (API 37).</span>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <span class="lang-en">MultiStream Chat · Licensed under GPL-3.0 · Derivatives must stay ad-free · Built with Kotlin &amp; Jetpack Compose</span>
+    <span class="lang-es">MultiStream Chat · Licencia GPL-3.0 · Las derivadas deben mantenerse sin anuncios · Hecho con Kotlin y Jetpack Compose</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
